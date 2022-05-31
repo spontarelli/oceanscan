@@ -1,0 +1,270 @@
+﻿div.ui-layout-center
+{
+    overflow: hidden;
+}
+div.tab_item
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div#map_container
+{
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    overflow: hidden;
+    display: block;
+    min-width: 300px;
+}
+
+canvas#map{ width: 100%; height: calc(100% - 40px); }
+
+div#map_cursor
+{
+    width: 20px;
+	height: 20px;
+	border-bottom: 2px solid yellow;
+	border-top: 2px solid yellow;
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+	-moz-border-radius: 2px; 
+	-webkit-border-radius: 2px; 
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+}
+
+canvas#background_map {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+canvas#foreground_map
+{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+div#map
+{
+    border: 1px solid black;
+    /*display: block;*/
+	display: none; /**/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+div#map img
+{
+    width: 100%;
+    height: 100%;
+	display: none; /**/
+}
+
+/* Map menu */
+div#map_menu
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+div#slider
+{
+    position: relative;
+    top: 54px;
+    left: 20px;
+    height: 150px;
+}
+
+button.map_button
+{
+    background-image: url(/images/next.png);
+    position: relative;
+    color: #333333;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+}
+
+
+button.map_button img {
+    width: 32px;
+}
+
+button#restore
+{    
+    top: -146px;
+    left: 12px;
+}
+
+button#show_waterfalls
+{   
+    top: -146px;
+    left: 15px;
+}
+
+div#infobar
+{
+    display: none;
+    color: Black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 0em;
+    background-color: #cccccc;
+    opacity: 0.75;
+    text-align: center;
+    min-width: 200px;
+}
+
+/* Tooltip */
+div#tooltip
+{
+    color: Black;
+    border: 2px solid #AAAAAA;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 200px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.75;
+    display: none;
+}
+div#arrow
+{
+    float: right;
+    height: 48px;
+    margin-top: -53px;
+    overflow: hidden;
+    position: relative;
+    width: 65px;
+}
+div#arrow img
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: auto;
+    height: auto;
+}
+div#tooltip p
+{
+    font-size: smaller;
+    margin: 0.5em 0;
+}
+div#tooltip p#contact_name
+{
+    font-weight: bold;
+}
+
+/* Tabs */
+div#contact_tabs
+{
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    z-index: 100000;
+    background-color: White;
+    display: none;
+}
+
+/* Tabs options */
+div#tabs_options
+{
+    float: right;
+}
+
+button.tabs_option
+{
+    float: right;
+    width: 27px;
+    height: 27px;
+    padding: 0px;
+    border-radius: 3px;
+    margin-left: -1px;
+    margin-top: 2px;
+}
+
+button.tabs_option img
+{
+    width: 100%;
+    height: 100%;
+}
+
+button#close_tabs
+{
+    margin-left: 4px;
+}
+
+/* Tab content */
+
+div.contact
+{
+    width: 100%;
+    height: calc(100% - 30px);
+    /*overflow: auto;*/
+}
+
+div.contact_image, div.contact_info
+{
+    float: left;
+    font-size: small;
+}
+
+div.contact_info
+{
+    padding-top: 20px;
+    width: calc(50% - 20px);
+}
+
+div.contact_image
+{
+    padding: 20px;
+    height: calc(100% - 40px);
+    width: calc(50% - 40px);
+}
+
+div.contact_image img
+{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+div.contact_target_info, div.contact_user_info
+{
+    border-bottom: 1px solid black;
+}
+
+div.contact_target_info ul, div.contact_user_info ul
+{
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0.5em 0;
+}
+
+div.contact_target_info ul ul, div.contact_user_info ul ul
+{
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: none;
+}
+
+div.contact_target_info
+{
+    border-bottom: 1px solid black;
+}

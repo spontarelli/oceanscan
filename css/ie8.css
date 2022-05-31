@@ -1,0 +1,9 @@
+#infobar
+{
+    filter: alpha(opacity=60);
+}
+
+.tooltip
+{
+    filter: alpha(opacity=75);
+}

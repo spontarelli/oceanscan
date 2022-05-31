@@ -1,0 +1,4 @@
+div.ui-vbuttonset label.ui-button { margin: 2px; display: block; width: calc(100% - 6px); }
+div.ui-vbuttonset { width: 100%; display: block; overflow-y:auto; }
+div.ui-layout-west { overflow:hidden; }
+/*div.tab_item { overflow-x:hidden; overflow-y:auto; }*/

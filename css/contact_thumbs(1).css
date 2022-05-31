@@ -1,0 +1,71 @@
+﻿/* Contact thumbs */
+div#contact_thumb_set
+{
+    display: block;
+    overflow: auto;
+    float: left;
+    padding: 5px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+}
+
+div.contact_thumb
+{
+    float: left;
+    padding: 10px;
+}
+
+div.contact_thumb.selected
+{
+    background-color: #ADD8E6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px Highlight;
+}
+
+div.contact_thumb_image
+{
+    margin: 3px;
+}
+
+div.contact_thumb_image img
+{
+    width: 100px;
+    height: 100px;
+}
+
+div.contact_thumb_name
+{
+    margin: 3px;
+    text-align: center;
+}
+
+/* Toggle contact thumbs */
+div.toggle_contact_set
+{
+    float: left;
+    height: 100%;
+    min-height: 700px;
+    display: table;
+}
+
+div.toggle_contact_set div#vertical_center
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.toggle_contact_set div.toggle_button
+{
+    padding: 20px 0;
+    width: 26px;
+    height: 86px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+}
+
+div.toggle_button img
+{
+    width: 100%;
+    height: 100%;
+}
